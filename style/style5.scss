@@ -1,0 +1,149 @@
+@import "./mixins";
+
+*{
+    font-family: 'Montserrat', sans-serif;
+
+}  
+
+body{
+    margin:0;
+}
+
+#top-10{
+  
+
+    .section{
+       
+        
+
+        &-one{
+            display: flex;
+            justify-content: center;
+            height: 100vh;
+            align-items: center;
+           
+            @include mobile{
+
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                height: 100vh;
+                align-items: center;
+            }
+
+               
+            @include tablet{
+
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                height: 100vh;
+                align-items: center;
+            }
+
+            &-img{
+                display: contents;
+
+
+            &1{
+
+                margin-right: 15%;
+                z-index: 1;
+            
+
+                @include mobile{
+
+                    width: 70%;
+                    margin-right: 0%;
+                }
+
+                @include tablet{
+
+                    width: 70%;
+                    margin-right: 0%;
+                }
+            }
+                
+                
+                &2{
+
+                    position: absolute;
+                    left: 21.3%;
+                    top: 25.2%;
+
+                    @include mobile{
+                        position: absolute;
+                        left: 19.1%;
+                        top: 4.1%;
+                        width: 70%;
+                         
+                    }
+                    
+                    @include tablet{
+                        position: absolute;
+                        left: 19.1%;
+                        top: 4.1%;
+                        width: 70%;
+                         
+                    }
+                   
+                }
+
+                
+            }
+
+
+        }
+
+        &-title{
+
+            @include mobile{
+                padding: 80px 21% 0px 25.2%;
+            }
+
+            @include tablet{
+                padding: 80px 21% 0px 25.2%;
+            }
+
+            &-span{
+                color: rgba(35, 166, 240, 1);
+                font-weight: 700;
+
+
+            }
+
+            &-h6{
+                font-size: larger;
+                font-weight: 900;
+
+                &-2th{
+                    font-weight: 700;
+
+
+                }
+
+
+            }
+
+            &-image{
+                position: absolute;
+
+                &1{
+                    position: relative;
+                    right: 165%;
+                    top: 22.5%;
+                    font-weight: 900;
+    
+    
+                }
+
+
+            }
+
+
+           
+        }
+
+
+    }
+}
